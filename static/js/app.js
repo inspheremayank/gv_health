@@ -10,7 +10,7 @@ $.event.add(window, "scroll", function () {
         $('.header').removeClass('header__fixed');
     }
 });
-/***********************************/
-/* Initalise WOW Js */
-/**********************************/
-new WOW().init();
+$(".navigation-section .open-menu").on('click', function() {
+   $(this).toggleClass('active');
+   $(this).next('ul').toggleClass('active');
+});

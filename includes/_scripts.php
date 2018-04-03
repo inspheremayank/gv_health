@@ -5,7 +5,6 @@
 <script type="text/javascript" src="static/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="static/plugins/slick/js/slick.min.js"></script>
 <script type="text/javascript" src="static/plugins/fancybox/js/jquery.fancybox.js"></script>
-<script type="text/javascript" src="static/plugins/wow/js/wow.js"></script>
 <!-- End Core Plugins -->
 
 <!-- Begin Page Level Plugins -->
