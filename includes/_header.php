@@ -5,8 +5,11 @@
             <div class="col-12">
                 <div class="d-flex justify-content-between align-items-center header__section">
                     <aside class="header__section-left">
-                        <a class="main-logo" href="javascript:;" target="_blank">
-                            <img src="/static/images/logos/gv-health-logo.svg" class="img-fluid" alt="logo" />
+                        <a class="main-logo" href="javascript:;">
+                            <img src="/static/images/gv-health-logo-white.svg" class="img-fluid" alt="logo" />
+                        </a>
+                        <a class="main-logo--scroll" href="javascript:;">
+                            <img src="/static/images/gv-health-logo.svg" class="img-fluid" alt="logo" />
                         </a>
                     </aside>
                     <aside class="header__section-right">

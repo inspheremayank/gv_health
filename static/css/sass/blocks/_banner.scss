@@ -3,6 +3,29 @@
 .banner__section {
     height: 500px;
     position: relative;
+    &--ltArt {
+        position: absolute;
+        left: 0;
+        top: -91px;
+        width: calc(50% + 120px);
+        height: calc(#{$viewportSize} + 91px);
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: calc(#{$viewportSize} - 502px);
+            background-color: rgba(#82BD41,0.9);
+            height: $viewportSize;
+        }
+        .svg-inject {
+            height: $viewportSize;
+            position: absolute;
+            right: 0;
+            top: 0;
+            overflow: hidden;
+        }
+    }
     &--rtArt {
         position: absolute;
         right: 0;
@@ -11,6 +34,37 @@
         overflow: hidden;
         .svg-inject {
             @include size($viewportSize);
+        }
+    }
+    &__content {
+        height: $viewportSize;
+        .container, .row {
+            height: $viewportSize;
+        }
+        &-area {
+            @include size($viewportSize);
+            max-width: 500px;
+            @include flexbox();
+            @include flex-direction(column,vertical);
+            @include justify-content(flex-end);
+            @include padding-bottom(110);
+        }
+        &--title {
+            color: $white;
+            @include font-size(46);
+            letter-spacing: 0.5px;
+            @extend .font-regular;
+        }
+        &--description {
+            color: $white;
+            @include font-size(20);
+            letter-spacing: 0.3px;
+            @extend .font-regular;
+            @include margin-top(15);
+        }
+        &--button {
+            @include margin-top(30);
+            max-width: 150px;
         }
     }
 }

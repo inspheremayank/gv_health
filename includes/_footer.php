@@ -8,7 +8,7 @@
                             <div class="footer__main__content">
                                 <div class="footer__main__content--logo">
                                     <a href="javascript:;">
-                                        <img src="/static/images/logos/gv-health-logo.svg" class="img-fluid" alt="logo" />
+                                        <img src="/static/images/gv-health-logo.svg" class="img-fluid" alt="logo" />
                                     </a>
                                 </div>
                             </div>

@@ -18,6 +18,9 @@
                 display: block;
                 width: 170px; 
                 @include transition(all 0.3s ease);
+                &--scroll {
+                    display: none;
+                }
             }
         }
         &-right {
@@ -198,7 +201,11 @@
         .header__section {
             &-left {
                 .main-logo {
-                    width: 50px;
+                    display: none;
+                    &--scroll {
+                        display: block;
+                        width: 100px;
+                    }
                 }
             }
             &-right {
