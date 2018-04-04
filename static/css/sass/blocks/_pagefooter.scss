@@ -1,7 +1,7 @@
 /* Page Footer section
 ================================ */
 .footer {
-    background: $light-grey none repeat scroll 0 0;
+    background: rgba($darkGrey,0.15) none repeat scroll 0 0;
     &__main {
         @include padding(40 0);
         &__content {
