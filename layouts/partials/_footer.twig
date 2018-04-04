@@ -1,8 +1,10 @@
-{% set blogInfo = _Blog.getHomeBlogSettings()%}
+{% set blogInfo = _Menu.getSocialLinks()%}
 {% set ftClass = "footer-main__container__listing--justify-end" %}
-{% if blogInfo.social['facebook'] is not empty or blogInfo.social['twitter'] is not empty or blogInfo.social['instagram'] is not empty or blogInfo.social['youtube'] is not empty %}
+{% if blogInfo['vimeo'] is not empty or blogInfo['linkedin'] is not empty or blogInfo['google'] is not empty or blogInfo['facebook'] is not empty or blogInfo['twitter'] is not empty or blogInfo['instagram'] is not empty or blogInfo['youtube'] is not empty %}
     {% set ftClass = "" %}
 {% endif %}
+{% set menuItems = _Menu.get({menuType: 'footer'}) %}
+{{ _AppHelper.printArray(menuItems)}}
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -31,7 +33,7 @@
                                         <a href="javascript:;">Menu One</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:;">Menu One</a>
+                                        <a href="javascript:;">Menu Two</a>
                                     </li>
                                     <li>
                                         <a href="javascript:;">Menu One</a>
@@ -80,17 +82,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-6 col-md-3 col-xxs-12">
-                            <div class="footer__main__content">
-                                <div class="footer__main__content--heading">Follow us</div>
-                                <div class="footer__main__content--social-media">
-                                    <a href="javascript:;" class="fa fa-envelope"></a>
-                                    <a href="javascript:;" class="fa fa-twitter"></a>
-                                    <a href="javascript:;" class="fa fa-linkedin"></a>
-                                    <a href="javascript:;" class="fa fa-vimeo"></a>
-                                </div>
-                            </div>
-                        </div>
+
+                        {{ this.render('social-links.twig', {blogInfo: blogInfo}) | raw }}
                     </div>
                 </div>
                 <div class="footer__bottom">
