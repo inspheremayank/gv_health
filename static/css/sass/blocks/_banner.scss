@@ -3,6 +3,25 @@
 .banner__section {
     height: 500px;
     position: relative;
+    &:after {
+        content: '';
+        z-index: 99;
+        @include linear-gradient(rgba(25, 44, 84, 0.2), $zblack);
+        @include size(#{$viewportSize});
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 10;
+    }
+    @media #{$media-ipadSmall} {
+        height: inherit;
+    }
+    @media #{$media-ipadPortrait} {
+        &:after {
+            display: block;
+        }
+    }
     &--ltArt {
         position: absolute;
         left: 0;
@@ -25,6 +44,9 @@
             top: 0;
             overflow: hidden;
         }
+        @media #{$media-ipadPortrait} {
+            display: none;
+        }
     }
     &--rtArt {
         position: absolute;
@@ -35,9 +57,14 @@
         .svg-inject {
             @include size($viewportSize);
         }
+        @media #{$media-ipadPortrait} {
+            display: none;
+        }
     }
     &__content {
         height: $viewportSize;
+        z-index: 20;
+        position: relative;
         .container, .row {
             height: $viewportSize;
         }
@@ -48,12 +75,19 @@
             @include flex-direction(column,vertical);
             @include justify-content(flex-end);
             @include padding-bottom(110);
+            @media #{$media-ipadSmall} {
+                max-width: inherit;
+                @include padding(60 0);
+            }
         }
         &--title {
             color: $white;
             @include font-size(46);
             letter-spacing: 0.5px;
             @extend .font-regular;
+            @media #{$media-ipadPortrait} {
+                @include font-size(28);
+            }
         }
         &--description {
             color: $white;
@@ -61,6 +95,9 @@
             letter-spacing: 0.3px;
             @extend .font-regular;
             @include margin-top(15);
+            @media #{$media-ipadPortrait} {
+                @include font-size(16);
+            }
         }
         &--button {
             @include margin-top(30);

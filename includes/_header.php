@@ -8,7 +8,10 @@
                         <a class="main-logo" href="javascript:;">
                             <img src="/static/images/gv-health-logo-white.svg" class="img-fluid" alt="logo" />
                         </a>
-                        <a class="main-logo--scroll" href="javascript:;">
+                        <a class="main-logo main-logo--responsive" href="javascript:;">
+                            <img src="/static/images/gv-health-logo.svg" class="img-fluid" alt="logo" />
+                        </a>
+                        <a class="main-logo main-logo--scroll" href="javascript:;">
                             <img src="/static/images/gv-health-logo.svg" class="img-fluid" alt="logo" />
                         </a>
                     </aside>

@@ -18,8 +18,18 @@
                 display: block;
                 width: 170px; 
                 @include transition(all 0.3s ease);
+                @media #{$media-ipadPortrait} {
+                    display: none;
+                }
                 &--scroll {
                     display: none;
+                }
+                &--responsive {
+                    display: none;
+                    @media #{$media-ipadPortrait} {
+                        display: block;
+                        width: 100px;
+                    }
                 }
             }
         }
@@ -205,6 +215,9 @@
                     &--scroll {
                         display: block;
                         width: 100px;
+                    }
+                    &--responsive {
+                        display: none;
                     }
                 }
             }

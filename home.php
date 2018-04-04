@@ -4,7 +4,7 @@ $pageTitle = 'GV Health';
 include("includes/_global-Head.php");
 ?>
 <?php
-    include("includes/_header.php");
+include("includes/_header.php");
 ?>
 
 <div class="clearfix"></div>
@@ -18,7 +18,7 @@ include("includes/_global-Head.php");
                   c1.469-43.204-2.611-86.635-11.299-128.958c-4.229-20.608-9.508-41.028-16.18-60.989C537.699,54.233,521.158,0,515.07,0h-80.752
                   h-96.473h-160.49H0V770.195z"/>
         </svg>
-        
+
     </div>
     <div class="banner__section--rtArt">
         <svg version="1.1" class="svg-inject" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -41,8 +41,289 @@ include("includes/_global-Head.php");
         </div>
     </div>
 </div>
+<div class="clearfix"></div>
+<div class="cta-wrap cta-wrap__about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-10 m-auto">
+                <div class="cta-wrap__main">
+                    <div class="cta-wrap__main--title">Excepteur sint occaecat cupidatat non neairolproident, sunt in culpa Ut enimboris saellemdo conse ad miom sermodo consequat. </div>
+                    <div class="cta-wrap__main--smallContent">– Attribution for quote goes here</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="card-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="card__view col-12 col-md-6 col-lg-3 card__view-third small">
+                <div class="">
+                    <a href="javascript:;" class="card__view--items">
+                        <div class="card__view--content">
+                            <div class="mask"></div>
+                            <figure class="embed-responsive embed-responsive-16by9">
+                                <img class="embed-responsive-item" src="static/images/test-image.jpg" alt="image" />
+                                <div class="video-play"></div>
+                            </figure>
+                            <div class="optionSet">
+                                <ul>
+                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
+                                    <li>Pin <span class="fa fa-map-marker"></span></li>
+                                    <li>Edit <span class="fa fa-cog"></span></li>
+                                </ul>
+                            </div>
+                            <div class="social-icons"></div>
+                            <div class="content__section">
+                                <div class="content__section-category">Category</div>
+                                <h2 class="content__section-heading">Keeping a healthy immune system</h2>
+                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                <button class="content__section-button">Read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card__view col-12 col-md-6 col-lg-3 card__view-third small">
+                <div class="">
+                    <a href="javascript:;" class="card__view--items">
+                        <div class="card__view--content">
+                            <div class="mask"></div>
+                            <figure class="embed-responsive embed-responsive-16by9">
+                                <img class="embed-responsive-item" src="static/images/test-image.jpg" alt="image" />
+                                <div class="video-play"></div>
+                            </figure>
+                            <div class="optionSet">
+                                <ul>
+                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
+                                    <li>Pin <span class="fa fa-map-marker"></span></li>
+                                    <li>Edit <span class="fa fa-cog"></span></li>
+                                </ul>
+                            </div>
+                            <div class="social-icons"></div>
+                            <div class="content__section">
+                                <div class="content__section-category">Category</div>
+                                <h2 class="content__section-heading">Keeping a healthy immune system</h2>
+                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                <button class="content__section-button">Read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half">
+                <div class="">
+                    <a href="javascript:;" class="card__view--items">
+                        <div class="card__view--content">
+                            <div class="mask"></div>
+                            <figure class="embed-responsive embed-responsive-16by9">
+                                <img class="embed-responsive-item" src="static/images/test-image.jpg" alt="image" />
+                                <div class="video-play"></div>
+                            </figure>
+                            <div class="optionSet">
+                                <ul>
+                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
+                                    <li>Pin <span class="fa fa-map-marker"></span></li>
+                                    <li>Edit <span class="fa fa-cog"></span></li>
+                                </ul>
+                            </div>
+                            <div class="social-icons"></div>
+                            <div class="content__section">
+                                <div class="content__section-category">Category</div>
+                                <h2 class="content__section-heading">Excepteur sint occaecat cupidatat non proident, sunt in culpa</h2>
+                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                <button class="content__section-button">Read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half card__view-upWard">
+                <div class="">
+                    <a href="javascript:;" class="card__view--items">
+                        <div class="card__view--content">
+                            <div class="mask"></div>
+                            <figure class="embed-responsive embed-responsive-16by9">
+                                <img class="embed-responsive-item" src="static/images/test-image.jpg" alt="image" />
+                                <div class="video-play"></div>
+                            </figure>
+                            <div class="optionSet">
+                                <ul>
+                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
+                                    <li>Pin <span class="fa fa-map-marker"></span></li>
+                                    <li>Edit <span class="fa fa-cog"></span></li>
+                                </ul>
+                            </div>
+                            <div class="social-icons"></div>
+                            <div class="content__section">
+                                <div class="content__section-category">Category</div>
+                                <h2 class="content__section-heading">Excepteur sint occaecat cupidatat non proident, sunt in culpa</h2>
+                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                <button class="content__section-button">Read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card__view col-12 col-md-6 col-lg-3 card__view-third small">
+                <div class="">
+                    <a href="javascript:;" class="card__view--items">
+                        <div class="card__view--content">
+                            <div class="mask"></div>
+                            <figure class="embed-responsive embed-responsive-16by9">
+                                <img class="embed-responsive-item" src="static/images/test-image.jpg" alt="image" />
+                                <div class="video-play"></div>
+                            </figure>
+                            <div class="optionSet">
+                                <ul>
+                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
+                                    <li>Pin <span class="fa fa-map-marker"></span></li>
+                                    <li>Edit <span class="fa fa-cog"></span></li>
+                                </ul>
+                            </div>
+                            <div class="social-icons"></div>
+                            <div class="content__section">
+                                <div class="content__section-category">Category</div>
+                                <h2 class="content__section-heading">Keeping a healthy immune system</h2>
+                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                <button class="content__section-button">Read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 cta-wrap cta-wrap__action">
+                <div class="cta-wrap__main">
+                    <div class="cta-wrap__main--description">Visit Our</div>
+                    <div class="cta-wrap__main--title">Recruitment Website</div>
+                    <a class="cta-wrap__main--button button--small button button--orange button--radius upper">Visit Now</a>
+                    <figure class="cta-wrap__main--image">
+                        <div class="image-covered img-container" style="background-image: url('static/images/test-image.jpg')"></div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center my-5">
+                <button class="button button--orange button--radius">Load more</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half">
+                <div class="">
+                    <a href="javascript:;" class="card__view--items">
+                        <div class="card__view--content">
+                            <div class="mask"></div>
+                            <figure class="embed-responsive embed-responsive-16by9">
+                                <img class="embed-responsive-item" src="static/images/test-image.jpg" alt="image" />
+                                <div class="video-play"></div>
+                            </figure>
+                            <div class="optionSet">
+                                <ul>
+                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
+                                    <li>Pin <span class="fa fa-map-marker"></span></li>
+                                    <li>Edit <span class="fa fa-cog"></span></li>
+                                </ul>
+                            </div>
+                            <div class="social-icons"></div>
+                            <div class="content__section">
+                                <div class="content__section-category">Category</div>
+                                <h2 class="content__section-heading">System card with image</h2>
+                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                <button class="content__section-button">Read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half">
+                <div class="without-image">
+                    <a href="javascript:;" class="card__view--items">
+                        <div class="card__view--content">
+                            <div class="mask"></div>
+                            <figure class="embed-responsive embed-responsive-16by9">
+                                <img class="embed-responsive-item" src="static/images/test-image.jpg" alt="image" />
+                                <div class="video-play"></div>
+                            </figure>
+                            <div class="optionSet">
+                                <ul>
+                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
+                                    <li>Pin <span class="fa fa-map-marker"></span></li>
+                                    <li>Edit <span class="fa fa-cog"></span></li>
+                                </ul>
+                            </div>
+                            <div class="social-icons"></div>
+                            <div class="content__section">
+                                <div class="content__section-category">Category</div>
+                                <h2 class="content__section-heading">System card without image</h2>
+                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                <button class="content__section-button">Read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half">
+                <div class="social twitter">
+                    <a href="javascript:;" class="card__view--items">
+                        <div class="card__view--content">
+                            <div class="mask"></div>
+                            <figure class="embed-responsive embed-responsive-16by9">
+                                <img class="embed-responsive-item" src="static/images/test-image.jpg" alt="image" />
+                                <div class="video-play"></div>
+                            </figure>
+                            <div class="optionSet">
+                                <ul>
+                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
+                                    <li>Pin <span class="fa fa-map-marker"></span></li>
+                                    <li>Edit <span class="fa fa-cog"></span></li>
+                                </ul>
+                            </div>
+                            <div class="social-icons"></div>
+                            <div class="content__section">
+                                <div class="content__section-category">Category</div>
+                                <h2 class="content__section-heading">Excepteur sint occaecat cupidatat non proident, sunt in culpa</h2>
+                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                <button class="content__section-button">Read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half">
+                <div class="social youtube video">
+                    <a href="javascript:;" class="card__view--items">
+                        <div class="card__view--content">
+                            <div class="mask"></div>
+                            <figure class="embed-responsive embed-responsive-16by9">
+                                <img class="embed-responsive-item" src="static/images/test-image.jpg" alt="image" />
+                                <div class="video-play"></div>
+                            </figure>
+                            <div class="optionSet">
+                                <ul>
+                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
+                                    <li>Pin <span class="fa fa-map-marker"></span></li>
+                                    <li>Edit <span class="fa fa-cog"></span></li>
+                                </ul>
+                            </div>
+                            <div class="social-icons"></div>
+                            <div class="content__section">
+                                <div class="content__section-category">Category</div>
+                                <h2 class="content__section-heading">Excepteur sint occaecat cupidatat non proident, sunt in culpa</h2>
+                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                <button class="content__section-button">Read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
 <?php
-    include("includes/_footer.php");
+include("includes/_footer.php");
 ?>
 <div class="clearfix"></div>
 <!-- Begin Script section -->
