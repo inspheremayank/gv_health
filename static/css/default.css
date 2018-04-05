@@ -131,8 +131,28 @@ table {
 /* FONT PATH
  * -------------------------- */
 @font-face {
+  font-family: 'DINPro-Light';
+  src: url("../fonts/din/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/din/DINPro-Light.otf") format("opentype"), url("../fonts/din/DINPro-Light.woff") format("woff"), url("../fonts/din/DINPro-Light.ttf") format("truetype"), url("../fonts/din/DINPro-Light.svg#DINPro-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'DINPro-Regular';
   src: url("../fonts/din/DINPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/din/DINPro-Regular.otf") format("opentype"), url("../fonts/din/DINPro-Regular.woff") format("woff"), url("../fonts/din/DINPro-Regular.ttf") format("truetype"), url("../fonts/din/DINPro-Regular.svg#DINPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'DINPro-Medium';
+  src: url("../fonts/din/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/din/DINPro-Medium.otf") format("opentype"), url("../fonts/din/DINPro-Medium.woff") format("woff"), url("../fonts/din/DINPro-Medium.ttf") format("truetype"), url("../fonts/din/DINPro-Medium.svg#DINPro-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'DINPro-Bold';
+  src: url("../fonts/din/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/din/DINPro-Bold.otf") format("opentype"), url("../fonts/din/DINPro-Bold.woff") format("woff"), url("../fonts/din/DINPro-Bold.ttf") format("truetype"), url("../fonts/din/DINPro-Bold.svg#DINPro-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'DINPro-Black';
+  src: url("../fonts/din/DINPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/din/DINPro-Black.otf") format("opentype"), url("../fonts/din/DINPro-Black.woff") format("woff"), url("../fonts/din/DINPro-Black.ttf") format("truetype"), url("../fonts/din/DINPro-Black.svg#DINPro-Black") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Open Sans Font */
@@ -148,7 +168,7 @@ em, .em {
   text-decoration: none; }
 
 html, body {
-  font-family: "DINMedium", Arial, sans-serif;
+  font-family: "DINPro-Medium", Arial, sans-serif;
   font-size: 1rem;
   color: #d8d8d8; }
 
@@ -165,16 +185,16 @@ h4, h5, h6 {
   margin-bottom: 15px; }
 
 .font-light {
-  font-family: "DINLight", Arial, sans-serif; }
+  font-family: "DINPro-Light", Arial, sans-serif; }
 
 .font-regular, .getForm__wrapper-form p, .banner__section__content--title, .banner__section__content--description, .table--customized tbody td span, .cta-wrap__action .cta-wrap__main--description, .cta-wrap__about .cta-wrap__main--title, .cta-wrap__about .cta-wrap__main--description {
   font-family: "DINPro-Regular", Arial, sans-serif; }
 
 .font-medium, .getForm__wrapper-form .title, .cta-wrap__action .cta-wrap__main--title {
-  font-family: "DINMedium", Arial, sans-serif; }
+  font-family: "DINPro-Medium", Arial, sans-serif; }
 
 .font-bold, .table--customized thead th, .table--customized tbody td, .footer__main__content--heading, .cta-wrap__main--description {
-  font-family: "DINBold", Arial, sans-serif; }
+  font-family: "DINPro-Bold", Arial, sans-serif; }
 
 a, a:link, a:visited, a:active {
   color: inherit;
@@ -320,7 +340,7 @@ body {
   height: auto;
   background: #ffffff none repeat scroll 0 0;
   color: #333333;
-  font-family: "DINMedium", Arial, sans-serif;
+  font-family: "DINPro-Medium", Arial, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -1442,7 +1462,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
         line-height: 1.35rem;
         overflow: hidden;
         max-height: 120px;
-        font-family: "DINBold", Arial, sans-serif;
+        font-family: "DINPro-Bold", Arial, sans-serif;
         color: #505050;
         padding-bottom: 0.3125rem; }
         @media screen and (max-width: 767px) {
@@ -1834,7 +1854,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
     line-height: 2.64rem;
     letter-spacing: 2px;
     margin-bottom: 5px;
-    font-family: "DINBold", Arial, sans-serif; }
+    font-family: "DINPro-Bold", Arial, sans-serif; }
   .user__profile-details p {
     font-size: 1.0625rem;
     line-height: 1.275rem;
@@ -2291,7 +2311,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
   max-width: 700px;
   margin: 0 auto;
   line-height: 3rem;
-  font-family: "DINBold", Arial, sans-serif; }
+  font-family: "DINPro-Bold", Arial, sans-serif; }
 .article__main {
   background: #ffffff none repeat scroll 0 0;
   color: #505050; }
@@ -2421,7 +2441,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
         line-height: 1.125rem;
         padding: 0rem 0rem 0.3125rem;
         line-height: 1.5;
-        font-family: "DINBold", Arial, sans-serif; }
+        font-family: "DINPro-Bold", Arial, sans-serif; }
       .article__main-authorSlide-content .designation {
         color: #5e5e5e;
         font-size: 0.75rem;
@@ -2500,7 +2520,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
   .article__main-content h1, .article__main-content h2, .article__main-content h3, .article__main-content h4, .article__main-content h5, .article__main-content h6 {
     line-height: 1.5 !important;
     margin-bottom: 22px !important;
-    font-family: "DINBold", Arial, sans-serif !important;
+    font-family: "DINPro-Bold", Arial, sans-serif !important;
     word-wrap: break-word; }
   .article__main-content h1 {
     font-size: 1.875rem;
