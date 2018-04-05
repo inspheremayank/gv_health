@@ -62,16 +62,16 @@
     }
     @include padding(40 10);
     &__action {
-        background: #002d56 none repeat scroll 0 0;
-        height: 230px;
-        @include padding(0);
+        @include padding(0 10);
         .cta-wrap__main {
             @include flex-direction(column,vertical);
             @include align-items(flex-start);
             overflow: hidden;
             height: $viewportSize;
-            @include padding-left(26);
-            @include padding-top(20);
+            @include padding-left(15);
+            @include padding-top(15);
+            background: #002d56 none repeat scroll 0 0;
+            height: 230px;
             &--title {
                 color: $white;
                 @include font-size(22);
