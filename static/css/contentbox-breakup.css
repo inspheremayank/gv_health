@@ -8,6 +8,9 @@
 .static-page__body {
     overflow: hidden;
 }
+.content_box_page {
+    font-family: 'DINPro-Medium', Arial, sans-serif; 
+}
 .content_box_page .content_area {
     padding: 0px !important;
     margin-bottom: 50px;
@@ -73,6 +76,9 @@
 .content_box_page .header .row img, .content_box_page .footer-main .row img {
     margin: 0px;
     display: block;
+}
+.content_box_page .footer__main__content--menu li a, .content_box_page .footer__bottom, .content_box_page .footer__bottom .footer__bottom--navigation a {
+    font-family: 'DINPro-Regular', Arial, sans-serif; 
 }
 .content_box_page .header__search-button .fa {
     top: -8px;

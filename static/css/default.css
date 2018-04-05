@@ -187,7 +187,7 @@ h4, h5, h6 {
 .font-light {
   font-family: "DINPro-Light", Arial, sans-serif; }
 
-.font-regular, .getForm__wrapper-form p, .banner__section__content--title, .banner__section__content--description, .table--customized tbody td span, .cta-wrap__action .cta-wrap__main--description, .cta-wrap__about .cta-wrap__main--title, .cta-wrap__about .cta-wrap__main--description {
+.font-regular, .getForm__wrapper-form p, .banner__section__content--title, .banner__section__content--description, .table--customized tbody td span, .footer__main__content--menu li a, .footer__bottom--ls, .footer__bottom--navigation a, .cta-wrap__action .cta-wrap__main--description, .cta-wrap__about .cta-wrap__main--title, .cta-wrap__about .cta-wrap__main--description {
   font-family: "DINPro-Regular", Arial, sans-serif; }
 
 .font-medium, .getForm__wrapper-form .title, .cta-wrap__action .cta-wrap__main--title {

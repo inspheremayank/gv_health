@@ -36,6 +36,7 @@
                         @include font-size(14);
                         @include transition(all 0.3s ease);
                         color: $grey;
+                        @extend .font-regular;
                         &:hover, &:focus {
                             color: $blue;
                         }
@@ -67,6 +68,7 @@
         }
         &--ls {
             color: $grey;
+            @extend .font-regular;
             @include font-size(12);
             letter-spacing: 0.2px;
         }
@@ -78,6 +80,7 @@
                 @include font-size(12);
                 letter-spacing: 0.2px;
                 color: $grey;
+                @extend .font-regular;
                 @include transition(all 0.3s ease);
                 + a {
                     &:before {
@@ -88,7 +91,7 @@
                             @include margin(0 5);
                         }
                     }
-                }
+                } 
                 &:hover, &:focus {
                     color: $blue;
                 }
