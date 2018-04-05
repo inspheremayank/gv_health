@@ -48,17 +48,8 @@
             top: 0;
             @include size(#{$viewportSize});
             z-index: 11;
-        }
-        &--overly-blue {
-            &:before {
-                background-color: rgba($blue, 0.8);
-            }
-        }
-        &--overly-white {
-            &:before {
-                background-color: rgba($white, 0.8);
-            }
-        }
+            background-color: rgba($white, 0.8);
+        } 
     }
     @include padding(40 10);
     &__action {

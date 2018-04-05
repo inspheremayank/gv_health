@@ -32,17 +32,14 @@ include("includes/_global-Head.php");
                         <div class="article__main-titleBand">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-12 col-md-10 m-auto">
                                         <div class="article__main-titleBand-content">
                                             <div class="article__userInfo">
                                                 <div class="article__userInfo-content">
-                                                    <div class="article__userInfo-detailed article__userInfo-detailed--justify-between"> 
-                                                        <div class="article__userInfo-date">
-                                                            <span>Published MAR 30 2018</span>
-                                                        </div>
+                                                    <div class="article__userInfo-detailed article__userInfo-detailed--justify-between">
+                                                        <h1 class="article__userInfo-title text-center">Title will be here</h1> 
                                                         <a class="article__userInfo-button button button__bordered button__bordered--grey button__icon--left" href="{{article.editUrl}}" target="_blank"><span class="fa fa-pencil"></span>Edit Article</a>
                                                     </div>
-                                                    <h1 class="article__userInfo-title text-center">Title will be here</h1> 
                                                 </div>
                                             </div>
                                         </div>
