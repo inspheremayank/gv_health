@@ -131,22 +131,10 @@ table {
 /* FONT PATH
  * -------------------------- */
 @font-face {
-  font-family: 'DINLight';
-  src: url("../fonts/din/DINLight.eot");
-  src: url("../fonts/din/DINLight.eot") format("embedded-opentype"), url("../fonts/din/DINLight.woff2") format("woff2"), url("../fonts/din/DINLight.woff") format("woff"), url("../fonts/din/DINLight.ttf") format("truetype"), url("../fonts/din/DINLight.svg#DINLight") format("svg"); }
-@font-face {
-  font-family: 'DIN-Regular';
-  src: url("../fonts/din/DIN-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/din/DIN-Regular.woff") format("woff"), url("../fonts/din/DIN-Regular.ttf") format("truetype"), url("../fonts/din/DIN-Regular.svg#DIN-Regular") format("svg");
+  font-family: 'DINPro-Regular';
+  src: url("../fonts/din/DINPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/din/DINPro-Regular.otf") format("opentype"), url("../fonts/din/DINPro-Regular.woff") format("woff"), url("../fonts/din/DINPro-Regular.ttf") format("truetype"), url("../fonts/din/DINPro-Regular.svg#DINPro-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-@font-face {
-  font-family: 'DINMedium';
-  src: url("../fonts/din/DINMedium.eot");
-  src: url("../fonts/din/DINMedium.eot") format("embedded-opentype"), url("../fonts/din/DINMedium.woff2") format("woff2"), url("../fonts/din/DINMedium.woff") format("woff"), url("../fonts/din/DINMedium.ttf") format("truetype"), url("../fonts/din/DINMedium.svg#DINMedium") format("svg"); }
-@font-face {
-  font-family: 'DINBold';
-  src: url("../fonts/din/DINBold.eot");
-  src: url("../fonts/din/DINBold.eot") format("embedded-opentype"), url("../fonts/din/DINBold.woff2") format("woff2"), url("../fonts/din/DINBold.woff") format("woff"), url("../fonts/din/DINBold.ttf") format("truetype"), url("../fonts/din/DINBold.svg#DINBold") format("svg"); }
 /* Open Sans Font */
 strong, .strong {
   font-weight: 700; }
@@ -165,13 +153,13 @@ html, body {
   color: #d8d8d8; }
 
 h1, h2, h3 {
-  font-family: "DIN-Regular", Arial, sans-serif; }
+  font-family: "DINPro-Regular", Arial, sans-serif; }
 
 h4, h5, h6 {
-  font-family: "DIN-Regular", Arial, sans-serif; }
+  font-family: "DINPro-Regular", Arial, sans-serif; }
 
 .form-section h2 {
-  font-family: "DIN-Regular", Arial, sans-serif; }
+  font-family: "DINPro-Regular", Arial, sans-serif; }
 
 .header-heading {
   margin-bottom: 15px; }
@@ -180,7 +168,7 @@ h4, h5, h6 {
   font-family: "DINLight", Arial, sans-serif; }
 
 .font-regular, .getForm__wrapper-form p, .banner__section__content--title, .banner__section__content--description, .table--customized tbody td span, .cta-wrap__action .cta-wrap__main--description, .cta-wrap__about .cta-wrap__main--title, .cta-wrap__about .cta-wrap__main--description {
-  font-family: "DIN-Regular", Arial, sans-serif; }
+  font-family: "DINPro-Regular", Arial, sans-serif; }
 
 .font-medium, .getForm__wrapper-form .title, .cta-wrap__action .cta-wrap__main--title {
   font-family: "DINMedium", Arial, sans-serif; }
@@ -594,7 +582,7 @@ ul li, ol li {
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
-  font-family: "DIN-Regular", Arial, sans-serif; }
+  font-family: "DINPro-Regular", Arial, sans-serif; }
   .button--small {
     padding: 0.625rem 1rem;
     font-size: 0.875rem;
@@ -1469,7 +1457,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
         background: none repeat scroll 0 0; }
       .card__view--content .content__section-category {
         color: #505050;
-        font-family: "DIN-Regular", Arial, sans-serif;
+        font-family: "DINPro-Regular", Arial, sans-serif;
         font-size: 0.75rem;
         line-height: 0.9rem;
         text-transform: uppercase;
@@ -1480,7 +1468,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
         max-height: 150px;
         overflow: hidden;
         color: #505050;
-        font-family: "DIN-Regular", Arial, sans-serif; }
+        font-family: "DINPro-Regular", Arial, sans-serif; }
       .card__view--content .content__section-userInfo {
         display: flex;
         align-items: center;
@@ -1761,7 +1749,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
     .blog__wrapper-banner-content h3, .blog__wrapper-banner-content h1 {
       font-size: 2.25rem;
       line-height: 2.7rem;
-      font-family: "DIN-Regular", Arial, sans-serif;
+      font-family: "DINPro-Regular", Arial, sans-serif;
       margin-bottom: 10px; }
     .blog__wrapper-banner-content p {
       font-size: 1.25rem;
@@ -1894,7 +1882,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
     font-size: 1.5rem;
     line-height: 1.8rem;
     letter-spacing: 2px;
-    font-family: "DIN-Regular", Arial, sans-serif;
+    font-family: "DINPro-Regular", Arial, sans-serif;
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 15px;
     padding-bottom: 0.3125rem; }
@@ -1903,9 +1891,9 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
     line-height: 1.2rem;
     letter-spacing: 1px;
     line-height: 1.83;
-    font-family: "DIN-Regular", Arial, sans-serif; }
+    font-family: "DINPro-Regular", Arial, sans-serif; }
     .user__profile-content p span {
-      font-family: "DIN-Regular", Arial, sans-serif; }
+      font-family: "DINPro-Regular", Arial, sans-serif; }
     .user__profile-content p + h3 {
       margin-top: 30px; }
   .user__profile-content ul {
@@ -1916,7 +1904,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
       letter-spacing: 1px;
       line-height: 1.5;
       margin-left: 20px;
-      font-family: "DIN-Regular", Arial, sans-serif; }
+      font-family: "DINPro-Regular", Arial, sans-serif; }
       .user__profile-content ul li:before {
         content: '-';
         margin-left: -20px;
@@ -1988,7 +1976,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
     .user__profile-userInfo .content-section .button {
       width: 80%;
       margin: 15px auto 30px;
-      font-family: "DIN-Regular", Arial, sans-serif;
+      font-family: "DINPro-Regular", Arial, sans-serif;
       font-size: 1.125rem;
       line-height: 1.35rem;
       line-height: 1; }
@@ -2285,7 +2273,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
       -ms-box-orient: vertical;
       box-orient: vertical; } }
 .article__userInfo-date {
-  font-family: "DIN-Regular", Arial, sans-serif;
+  font-family: "DINPro-Regular", Arial, sans-serif;
   letter-spacing: 3px;
   font-size: 0.6875rem;
   line-height: 0.825rem;
@@ -2537,7 +2525,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
     line-height: 1.2rem;
     line-height: 1.5 !important;
     letter-spacing: 1px !important;
-    font-family: "DIN-Regular", Arial, sans-serif !important;
+    font-family: "DINPro-Regular", Arial, sans-serif !important;
     word-wrap: break-word;
     margin-bottom: 15px !important; }
     .article__main-content p *, .article__main-content li *, .article__main-content a *, .article__main-content span * {
@@ -2545,7 +2533,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
       line-height: 1.2rem;
       line-height: 1.5 !important;
       letter-spacing: 1px !important;
-      font-family: "DIN-Regular", Arial, sans-serif !important;
+      font-family: "DINPro-Regular", Arial, sans-serif !important;
       word-wrap: break-word;
       margin-bottom: 15px !important; }
   .article__main-content a {
@@ -2555,7 +2543,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
-    font-family: "DIN-Regular", Arial, sans-serif !important;
+    font-family: "DINPro-Regular", Arial, sans-serif !important;
     color: #00a6ce; }
     .article__main-content a:hover, .article__main-content a:focus {
       border-color: transparent; }
@@ -2567,7 +2555,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
     line-height: 1.5rem;
     line-height: 1.5 !important;
     letter-spacing: 1px !important;
-    font-family: "DIN-Regular", Arial, sans-serif !important;
+    font-family: "DINPro-Regular", Arial, sans-serif !important;
     word-wrap: break-word;
     margin-bottom: 15px !important;
     font-weight: 700 !important;
@@ -2620,7 +2608,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
       list-style-position: outside;
       padding-left: 7px;
       margin-bottom: 10px;
-      font-family: "DIN-Regular", Arial, sans-serif !important; }
+      font-family: "DINPro-Regular", Arial, sans-serif !important; }
       .article__main-content ol li > p, .article__main-content ul li > p {
         margin-bottom: 0px; }
   .article__main-content ul li {
@@ -2628,7 +2616,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
     .article__main-content ul li span {
       position: relative;
       left: -22px;
-      font-family: "DIN-Regular", Arial, sans-serif !important; }
+      font-family: "DINPro-Regular", Arial, sans-serif !important; }
   .article__main-content ol li {
     list-style-type: decimal; }
   .article__main-content img {
@@ -2690,7 +2678,7 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
       color: #ffffff;
       z-index: 30;
       padding: 10px 20px;
-      font-family: "DIN-Regular", Arial, sans-serif !important; }
+      font-family: "DINPro-Regular", Arial, sans-serif !important; }
   .article__main-content figure[style*="right"] {
     margin-right: 0px;
     margin-left: 20px; }
