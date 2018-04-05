@@ -2,7 +2,7 @@
 {{ set(this, 'params', {isHomePageOnly: "1"})  }}
 {% set network = _Network.getNetworkData() %}
 {{set(this,'title',(network.title))}}
-{% set limit = 10 %}
+{% set limit = 11 %}
 {% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
 {% set articles = articlesArr.articles %}
 {#{{_AppHelper.printArray(blogList)}}#}
@@ -47,267 +47,52 @@
 <div class="clearfix"></div>
 <div class="card-wrap">
     <div class="container">
-        <div class="row">
-            <div class="card__view col-12 col-md-6 col-lg-3 card__view-third small">
-                <div class="">
-                    <a href="javascript:;" class="card__view--items">
-                        <div class="card__view--content">
-                            <div class="mask"></div>
-                            <figure class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="{{network.templatePath~'/static/images/test-image.jpg'}}" alt="image" />
-                                <div class="video-play"></div>
-                            </figure>
-                            <div class="optionSet">
-                                <ul>
-                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
-                                    <li>Pin <span class="fa fa-map-marker"></span></li>
-                                    <li>Edit <span class="fa fa-cog"></span></li>
-                                </ul>
-                            </div>
-                            <div class="social-icons"></div>
-                            <div class="content__section">
-                                <div class="content__section-category">Category</div>
-                                <h2 class="content__section-heading">Keeping a healthy immune system</h2>
-                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                <button class="content__section-button">Read more</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+        {% if articles|length > 0 %}
+            <div class="row">
+                {% for i in 0..1 %}
+                    {% if articles[i] is defined %}
+                        {{this.render('partials/_single-article.twig', {article: articles[i], 'position': i+1, class: 'col-12 col-md-6 col-lg-3 card__view-third small'}) | raw}}
+                    {% endif %}
+                {% endfor %}
+                {% if articles[2] is defined %}
+                        {{this.render('partials/_single-article.twig', {article: articles[2], 'position': 3, class: 'col-12 col-md-12 col-lg-6 card__view-half'}) | raw}}
+                {% endif %}
+                {% if articles[3] is defined %}
+                        {{this.render('partials/_single-article.twig', {article: articles[3], 'position': 4, class: 'col-12 col-md-12 col-lg-6 card__view-half card__view-upWard'}) | raw}}
+                {% endif %}
+                {% if articles[4] is defined %}
+                        {{this.render('partials/_single-article.twig', {article: articles[4], 'position': 5, class: 'col-12 col-md-6 col-lg-3 card__view-third small'}) | raw}}
+                {% endif %}
+                {{ this.render('partials/_recruitment.twig', {network:network, keyword: 'recruitment'}) | raw }}
             </div>
-            <div class="card__view col-12 col-md-6 col-lg-3 card__view-third small">
-                <div class="">
-                    <a href="javascript:;" class="card__view--items">
-                        <div class="card__view--content">
-                            <div class="mask"></div>
-                            <figure class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="{{network.templatePath~'/static/images/test-image.jpg'}}" alt="image" />
-                                <div class="video-play"></div>
-                            </figure>
-                            <div class="optionSet">
-                                <ul>
-                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
-                                    <li>Pin <span class="fa fa-map-marker"></span></li>
-                                    <li>Edit <span class="fa fa-cog"></span></li>
-                                </ul>
-                            </div>
-                            <div class="social-icons"></div>
-                            <div class="content__section">
-                                <div class="content__section-category">Category</div>
-                                <h2 class="content__section-heading">Keeping a healthy immune system</h2>
-                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                <button class="content__section-button">Read more</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+            <div class="row">
+                {% for i in 5..6 %}
+                    {% if articles[i] is defined %}
+                        {{this.render('partials/_single-article.twig', {article: articles[i], 'position': i+1, class: 'col-12 col-md-6 col-lg-3 card__view-third small'}) | raw}}
+                    {% endif %}
+                {% endfor %}
+                {% if articles[7] is defined %}
+                        {{this.render('partials/_single-article.twig', {article: articles[7], 'position': 8, class: 'col-12 col-md-12 col-lg-6 card__view-half'}) | raw}}
+                {% endif %}
+                {% if articles[8] is defined %}
+                        {{this.render('partials/_single-article.twig', {article: articles[8], 'position': 9, class: 'col-12 col-md-12 col-lg-6 card__view-half card__view-upWard'}) | raw}}
+                {% endif %}
+                {% if articles[9] is defined %}
+                        {{this.render('partials/_single-article.twig', {article: articles[9], 'position': 10, class: 'col-12 col-md-6 col-lg-3 card__view-third small'}) | raw}}
+                {% endif %}
+                {% if articles[10] is defined %}
+                        {{this.render('partials/_single-article.twig', {article: articles[10], 'position': 11, class: 'col-12 col-md-6 col-lg-3 card__view-third small'}) | raw}}
+                {% endif %}
             </div>
-            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half">
-                <div class="">
-                    <a href="javascript:;" class="card__view--items">
-                        <div class="card__view--content">
-                            <div class="mask"></div>
-                            <figure class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="{{network.templatePath~'/static/images/test-image.jpg'}}" alt="image" />
-                                <div class="video-play"></div>
-                            </figure>
-                            <div class="optionSet">
-                                <ul>
-                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
-                                    <li>Pin <span class="fa fa-map-marker"></span></li>
-                                    <li>Edit <span class="fa fa-cog"></span></li>
-                                </ul>
-                            </div>
-                            <div class="social-icons"></div>
-                            <div class="content__section">
-                                <div class="content__section-category">Category</div>
-                                <h2 class="content__section-heading">Excepteur sint occaecat cupidatat non proident, sunt in culpa</h2>
-                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                <button class="content__section-button">Read more</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half card__view-upWard">
-                <div class="">
-                    <a href="javascript:;" class="card__view--items">
-                        <div class="card__view--content">
-                            <div class="mask"></div>
-                            <figure class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="{{network.templatePath~'/static/images/test-image.jpg'}}" alt="image" />
-                                <div class="video-play"></div>
-                            </figure>
-                            <div class="optionSet">
-                                <ul>
-                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
-                                    <li>Pin <span class="fa fa-map-marker"></span></li>
-                                    <li>Edit <span class="fa fa-cog"></span></li>
-                                </ul>
-                            </div>
-                            <div class="social-icons"></div>
-                            <div class="content__section">
-                                <div class="content__section-category">Category</div>
-                                <h2 class="content__section-heading">Excepteur sint occaecat cupidatat non proident, sunt in culpa</h2>
-                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                <button class="content__section-button">Read more</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card__view col-12 col-md-6 col-lg-3 card__view-third small">
-                <div class="">
-                    <a href="javascript:;" class="card__view--items">
-                        <div class="card__view--content">
-                            <div class="mask"></div>
-                            <figure class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="{{network.templatePath~'/static/images/test-image.jpg'}}" alt="image" />
-                                <div class="video-play"></div>
-                            </figure>
-                            <div class="optionSet">
-                                <ul>
-                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
-                                    <li>Pin <span class="fa fa-map-marker"></span></li>
-                                    <li>Edit <span class="fa fa-cog"></span></li>
-                                </ul>
-                            </div>
-                            <div class="social-icons"></div>
-                            <div class="content__section">
-                                <div class="content__section-category">Category</div>
-                                <h2 class="content__section-heading">Keeping a healthy immune system</h2>
-                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                <button class="content__section-button">Read more</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 cta-wrap cta-wrap__action">
-                <div class="cta-wrap__main">
-                    <div class="cta-wrap__main--description">Visit Our</div>
-                    <div class="cta-wrap__main--title">Recruitment Website</div>
-                    <a class="cta-wrap__main--button button--small button button--orange button--radius upper">Visit Now</a>
-                    <figure class="cta-wrap__main--image">
-                        <div class="image-covered img-container" style="background-image: url({{network.templatePath~'/static/images/test-image.jpg'}})"></div>
-                    </figure>
-                </div>
-            </div>
+        {% endif%}
+        
+        <div class="row ajaxArticles" data-existing-nonpinned-count="{{articlesArr.existingNonPinnedCount}}" data-offset="{{limit}}">
+ 
         </div>
-        <div class="row">
-            <div class="col text-center my-5">
-                <button class="button button--orange button--radius">Load more</button>
+        {% if articles|length >= limit %}
+            <div class="text-center my-3 loadMoreArticles">
+                <button class="button button__icon--left button--orange button--radius"><i class="fa fa-spin"></i>Load more</button>
             </div>
-        </div>
-        <div class="row">
-            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half">
-                <div class="">
-                    <a href="javascript:;" class="card__view--items">
-                        <div class="card__view--content">
-                            <div class="mask"></div>
-                            <figure class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="{{network.templatePath~'/static/images/test-image.jpg'}}" alt="image" />
-                                <div class="video-play"></div>
-                            </figure>
-                            <div class="optionSet">
-                                <ul>
-                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
-                                    <li>Pin <span class="fa fa-map-marker"></span></li>
-                                    <li>Edit <span class="fa fa-cog"></span></li>
-                                </ul>
-                            </div>
-                            <div class="social-icons"></div>
-                            <div class="content__section">
-                                <div class="content__section-category">Category</div>
-                                <h2 class="content__section-heading">System card with image</h2>
-                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                <button class="content__section-button">Read more</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half">
-                <div class="without-image">
-                    <a href="javascript:;" class="card__view--items">
-                        <div class="card__view--content">
-                            <div class="mask"></div>
-                            <figure class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="{{network.templatePath~'/static/images/test-image.jpg'}}" alt="image" />
-                                <div class="video-play"></div>
-                            </figure>
-                            <div class="optionSet">
-                                <ul>
-                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
-                                    <li>Pin <span class="fa fa-map-marker"></span></li>
-                                    <li>Edit <span class="fa fa-cog"></span></li>
-                                </ul>
-                            </div>
-                            <div class="social-icons"></div>
-                            <div class="content__section">
-                                <div class="content__section-category">Category</div>
-                                <h2 class="content__section-heading">System card without image</h2>
-                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                <button class="content__section-button">Read more</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half">
-                <div class="social twitter">
-                    <a href="javascript:;" class="card__view--items">
-                        <div class="card__view--content">
-                            <div class="mask"></div>
-                            <figure class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="{{network.templatePath~'/static/images/test-image.jpg'}}" alt="image" />
-                                <div class="video-play"></div>
-                            </figure>
-                            <div class="optionSet">
-                                <ul>
-                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
-                                    <li>Pin <span class="fa fa-map-marker"></span></li>
-                                    <li>Edit <span class="fa fa-cog"></span></li>
-                                </ul>
-                            </div>
-                            <div class="social-icons"></div>
-                            <div class="content__section">
-                                <div class="content__section-category">Category</div>
-                                <h2 class="content__section-heading">Excepteur sint occaecat cupidatat non proident, sunt in culpa</h2>
-                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                <button class="content__section-button">Read more</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card__view col-12 col-md-12 col-lg-6 card__view-half">
-                <div class="social youtube video">
-                    <a href="javascript:;" class="card__view--items">
-                        <div class="card__view--content">
-                            <div class="mask"></div>
-                            <figure class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="{{network.templatePath~'/static/images/test-image.jpg'}}" alt="image" />
-                                <div class="video-play"></div>
-                            </figure>
-                            <div class="optionSet">
-                                <ul>
-                                    <li>Hide <span class="fa fa-eye-slash"></span></li>
-                                    <li>Pin <span class="fa fa-map-marker"></span></li>
-                                    <li>Edit <span class="fa fa-cog"></span></li>
-                                </ul>
-                            </div>
-                            <div class="social-icons"></div>
-                            <div class="content__section">
-                                <div class="content__section-category">Category</div>
-                                <h2 class="content__section-heading">Excepteur sint occaecat cupidatat non proident, sunt in culpa</h2>
-                                <div class="content__section-description text__dotdot">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                <button class="content__section-button">Read more</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        {% endif %}
     </div>
 </div>
