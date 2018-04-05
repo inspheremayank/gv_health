@@ -1026,7 +1026,8 @@ input.input--small36[type="text"], input.input--small36[type="password"], input.
           -moz-transition: all 0.3s ease;
           -o-transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
-          -ms-transition: all 0.3s ease; }
+          -ms-transition: all 0.3s ease;
+          display: block; }
           .header__section-right .navigation-section--menu li a:before {
             content: '';
             height: 2px;

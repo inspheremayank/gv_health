@@ -134,6 +134,7 @@
                         position: relative; 
                         a {
                             @include transition(all 0.3s ease);
+                            display: block;
                             &:before {
                                 content: '';
                                 height: 2px;
