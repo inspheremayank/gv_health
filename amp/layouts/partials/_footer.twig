@@ -1,0 +1,47 @@
+{% set blogInfo = _Blog.getHomeBlogSettings()%}
+<footer class="footer">
+    <!-- Begin footer main section -->
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-main__container d-flex justify-content-between align-items-center">
+                        <div class="footer-main__container--logo">
+                            {% set mainLogo = network.templatePath~'/static/images/logos/salvation-logo.svg' %}
+                            {% set logoUrl = network.networkLogoLinkUrl %}
+                            {% if network.logoMedia | length > 0 %}
+                                {% set mainLogo = _Media.getMediaUrl(network.logoMedia, 177, 65, {'crop': 'limit'} )%}
+                            {% endif %}
+                            <a href="{{logoUrl}}">
+                                <amp-img class="img-fluid" src="{{mainLogo}}" alt="footer logo" width="30" height="35"></amp-img>
+                            </a>
+                        </div>
+                        <div class="footer-main__container__listing">
+                            <a class="footer-main__container__listing--items privacy" href="javscript:;">Privacy Policy</a>
+                            <a class="footer-main__container__listing--items terms" href="javscript:;">Terms of Use</a>
+                            <a class="footer-main__container__listing--items" href="javscript:;">Copyright 2018 The Salvation Army</a>
+                            <a class="footer-main__container__listing--items" href="javscript:;">All donations over $2 are tax-deductible</a>
+                        </div>
+                        {% if blogInfo.social['facebook'] is not empty or blogInfo.social['twitter'] is not empty or blogInfo.social['instagram'] is not empty or blogInfo.social['youtube'] is not empty %}
+                            <div class="footer-main__container__social">
+                                {% if blogInfo.social['facebook'] is not empty %}
+                                    <a href="{{blogInfo.social['facebook']}}" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                                    {% endif %}
+                                    {% if blogInfo.social['twitter'] is not empty %}
+                                    <a href="{{blogInfo.social['twitter']}}" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    {% endif %}
+                                    {% if blogInfo.social['instagram'] is not empty %}
+                                    <a href="{{blogInfo.social['instagram']}}" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    {% endif %}
+                                    {% if blogInfo.social['youtube'] is not empty %}
+                                    <a href="{{blogInfo.social['youtube']}}" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                                    {% endif %}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!-- End footer main section -->
+</footer>

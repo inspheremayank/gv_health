@@ -13,7 +13,7 @@
 <div class="clearfix"></div>
 {{ this.render('partials/_top_cta.twig', {network:network, keyword: 'top_cta_gvHealth'}) | raw }}
 <div class="clearfix"></div>
-<div class="card-wrap">
+<div class="card-wrap mt-3">
     <div class="container">
         {% if articles|length > 0 %}
             <div class="row">
@@ -32,6 +32,11 @@
                         {{this.render('partials/_single-article.twig', {article: articles[4], 'position': 5, class: 'col-12 col-md-6 col-lg-3 card__view-third small'}) | raw}}
                 {% endif %}
                 {{ this.render('partials/_recruitment.twig', {network:network, keyword: 'recruitment'}) | raw }}
+            </div>
+            <div class="row">
+                <div class="col-12 my-5">
+                    <img class="img-fluid" src="{{network.templatePath~'/static/images/advertisement-space.png'}}" alt="advertisment image" />
+                </div>
             </div>
             <div class="row">
                 {% for i in 5..6 %}
