@@ -96,14 +96,7 @@
                                                     </div>
                                                     {% set img = _Media.getMediaUrl(media, 1900, 1900, {'crop': 'limit'} ) %}
                                                     <img src="{{img}}" class="img-fluid" alt="image" />
-                                                    {% if pos == 1%}
-                                                        <video class="autoplay-video" autobuffer muted controlsList="nodownload" loop>
-                                                            <source src="{{mediaUrl}}" type="video/mp4">
-                                                            <source src="{{mediaVideoUrlOgg}}" type="video/ogg">
-                                                            <source src="{{mediaVideoUrlWebm}}" type="video/webm">
-                                                        </video>
-                                                        <div class="image-caption">{{media.caption}}</div>
-                                                    {% endif %}
+                                                    
                                                 {% endif %}                                                
                                             </div>
                                         {% else %}
