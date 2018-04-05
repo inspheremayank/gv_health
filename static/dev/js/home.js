@@ -429,7 +429,7 @@ HomeController.Listing = (function ($) {
                     }
                 },
                 beforeSend: function (jqXHR, settings) {
-                    $(btnObj).html('<button class="button button__icon--left button--orange button--radius"><i class="fa fa-spinner"></i>Load more</button>');
+                    $(btnObj).html('<button class="button button__icon--left button--orange button--radius"><i class="fa fa-spinner fa-spin"></i>Load more</button>');
                 },
                 onComplete: function (jqXHR, textStatus) {
                     $(btnObj).html('<i class="fa fa-arrow-down" aria-hidden="true"></i> Load More');
