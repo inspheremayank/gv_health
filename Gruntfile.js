@@ -91,13 +91,12 @@ module.exports = function(grunt) {
         },
     });
     
-    //grunt.loadNpmTasks('grunt-contrib-watch');
-    //grunt.loadNpmTasks('grunt-contrib-uglify');
-    //grunt.loadNpmTasks('grunt-cache-breaker');
-    //grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-cache-breaker');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     
     // Default task(s).
-    grunt.registerTask('default');
+    grunt.registerTask('default', ['uglify', 'cssmin', 'cachebreaker']);
 };
