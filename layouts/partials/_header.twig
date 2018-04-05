@@ -36,12 +36,14 @@
                             </div>
                             <ul class="navigation-section--menu">
                                 {% set menuItems = blog.blogHeaderMenu %}
+                                {% set iteration = 0 %}
                                 {% for i in 0..4 %}
                                     {% if menuItems[i] is defined %}
                                         {% set hasChildren = menuItems[i].children is defined and menuItems[i].children | length > 0 ? true : false %} 
                                         {% if hasChildren %}
                                             {% set class = (i%2 != 0) ? "small-text" : "" %}
-                                            {% for childItem in menuItems[i].children%}
+                                            {% for childItem in menuItems[i].children if iteration < 4%}
+                                                {% set iteration = iteration+1 %}
                                                 {% set externalClass = (childItem.isExternal) ? 'external-link' : '' %}
                                                 {% set name = ((childItem.label is empty) ? ((childItem.pageTitle is empty)? childItem.blogTitle : childItem.pageTitle) : childItem.label) %}
                                                 <li>

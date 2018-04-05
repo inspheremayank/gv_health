@@ -24,7 +24,7 @@
                     {% set ctaVideoUrl =ctaWithMeta.additionalInfo.cta_video_url %}
                 {% endif%}
             {% endif%}
-            <div class="col-12 col-md-6 col-lg-3 cta-wrap cta-wrap__action image-covered {% if ctaVideoUrl is defined and ctaVideoUrl is not empty %}{{'video'}}{% endif%} cta_block_{{cta.id}}" {% if ctaBackgroundImage is not empty or cta.backgroundColor is not empty %} style="{{ (ctaBackgroundImage is not empty) ? 'background-image: url('~ctaBackgroundImage~');' : ''}}{{ (cta.backgroundColor is not empty) ? 'background-color: '~cta.backgroundColor~';' : ''}}"{% endif %}>
+            <div class="col-12 col-md-6 col-lg-3 cta-wrap cta-wrap__action image-covered">
                 <div class="cta-wrap__main">
                     <div class="cta-wrap__main--description">Visit Our</div>
                     <div class="cta-wrap__main--title">{{cta.title |raw}}</div>
