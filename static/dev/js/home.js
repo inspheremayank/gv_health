@@ -90,45 +90,45 @@ HomeController.Listing = (function ($) {
         });
     };
     
-    var excerptContentSlide = function() {
-        $(".excerpt-slideUp").each(function() {
-            var userHeight = $(this).find('.content__section-userInfo').outerHeight(true);
-            var headingHeight = $(this).find('.content__section-heading').outerHeight(true);
-            var totalHeight = parseInt(userHeight) + parseInt(headingHeight) + 45;
-            $(this).find('.content__section').css('height', totalHeight + 'px');
-        });
-
-        var reqObj = null;
-        $(".excerpt-slideUp").hover(
-            function () {
-                var elem = $(this);
-
-                var contentSection = $(elem).find('.content__section');
-                var contentSectionDescription = $(elem).find('.content__section-description');
-                var content = contentSectionDescription.html(); 
-
-                if (!elem.is(reqObj)) {
-                    reqObj = elem;
-                    contentHeight = contentSection.outerHeight(true);
-                }    
-
-                if ($.trim(content) != '') {
-                    contentSectionDescription.removeClass('active');
-                    var height = contentSectionDescription.outerHeight(true);   
-                    var calHeight = parseInt(contentHeight) + parseInt(height);
-                    contentSection.outerHeight(calHeight+"px");
-                    contentSectionDescription.addClass('active');
-                }
-            },
-            function () {
-                var elem = $(this);
-                var contentSection = $(elem).find('.content__section');
-                var contentSectionDescription = $(elem).find('.content__section-description');
-                contentSection.outerHeight(contentHeight+"px");
-                contentSectionDescription.removeClass('active');
-            }
-        );
-    };
+//    var excerptContentSlide = function() {
+//        $(".excerpt-slideUp").each(function() {
+//            var userHeight = $(this).find('.content__section-userInfo').outerHeight(true);
+//            var headingHeight = $(this).find('.content__section-heading').outerHeight(true);
+//            var totalHeight = parseInt(userHeight) + parseInt(headingHeight) + 45;
+//            $(this).find('.content__section').css('height', totalHeight + 'px');
+//        });
+//
+//        var reqObj = null;
+//        $(".excerpt-slideUp").hover(
+//            function () {
+//                var elem = $(this);
+//
+//                var contentSection = $(elem).find('.content__section');
+//                var contentSectionDescription = $(elem).find('.content__section-description');
+//                var content = contentSectionDescription.html(); 
+//
+//                if (!elem.is(reqObj)) {
+//                    reqObj = elem;
+//                    contentHeight = contentSection.outerHeight(true);
+//                }    
+//
+//                if ($.trim(content) != '') {
+//                    contentSectionDescription.removeClass('active');
+//                    var height = contentSectionDescription.outerHeight(true);   
+//                    var calHeight = parseInt(contentHeight) + parseInt(height);
+//                    contentSection.outerHeight(calHeight+"px");
+//                    contentSectionDescription.addClass('active');
+//                }
+//            },
+//            function () {
+//                var elem = $(this);
+//                var contentSection = $(elem).find('.content__section');
+//                var contentSectionDescription = $(elem).find('.content__section-description');
+//                contentSection.outerHeight(contentHeight+"px");
+//                contentSectionDescription.removeClass('active');
+//            }
+//        );
+//    };
 
     var bindSocialPostPopup = function () {
 
@@ -192,7 +192,7 @@ HomeController.Listing = (function ($) {
 
     var attachEvents = function () {
         bindSocialPostPopup();
-        excerptContentSlide();
+//        excerptContentSlide();
         if (_appJsConfig.isUserLoggedIn === 1 && _appJsConfig.userHasBlogAccess === 1) {
             //Bind pin/unpin article event
             bindPinUnpinArticle();
@@ -316,7 +316,7 @@ HomeController.Listing = (function ($) {
 
                             videoPlayFancybox();
 
-                            excerptContentSlide();
+//                            excerptContentSlide();
                             bindSocialPostPopup();
                         },
                         error: function (jqXHR, textStatus, errorThrown) {
