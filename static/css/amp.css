@@ -376,7 +376,59 @@ a, a:hover {
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
 }
-
+.header__section .header-icon-1 {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none repeat scroll 0 0;
+}
+.header__section .header-icon-1 i {
+    font-size: 20px;
+    line-height: 24px;
+}
+.standalone-menu {
+    width: 280px;
+    height: 100%;
+    background: #eff0f3 none repeat scroll 0 0;
+}
+.standalone-menu .navigation__main-menu {
+    padding-top: 70px
+}
+.standalone-menu .close__button {
+    top: 0.5em;
+    right: 0;
+    z-index: 100;
+    position: absolute;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding: .5em 0.85em;
+    line-height: 1.5em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.standalone-menu .close__button span { 
+    color: #000000;
+}
+.standalone-menu .navigation-section--menu {
+    margin: 0 15px;
+    padding-top: 60px;
+}
+.standalone-menu .navigation-section--menu li {
+    list-style: none;
+}
+.standalone-menu .navigation-section--menu li a {
+    display: flex;
+    padding: 10px 0;
+    justify-content: flex-end;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #000000;
+    letter-spacing: 1px;
+    font-family: DINPro-Medium, Arial, sans-serif;
+    text-align: right;
+}
 /* End header style */
 
 /* Begin footer style */
@@ -399,6 +451,7 @@ a, a:hover {
 }
 .footer__main__content--menu li {
     margin-bottom: 9px;
+    list-style: none;
 }
 .footer__main__content--menu li a {
     font-size: 0.875rem;

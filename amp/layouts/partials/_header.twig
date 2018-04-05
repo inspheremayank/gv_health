@@ -22,23 +22,24 @@
     <div class="close__button" on='tap:sidebar.close' role="1" tabindex="1">
         <span class="fa fa-close"></span>
     </div>
-    <div class="navigation__main-menu">
+    <ul class="navigation-section--menu">
         {% set menuItems = blogData.blogHeaderMenu %}
+        {% set iteration = 0 %}
         {% for i in 0..4 %}
             {% if menuItems[i] is defined %}
                 {% set hasChildren = menuItems[i].children is defined and menuItems[i].children | length > 0 ? true : false %} 
-
                 {% if hasChildren %}
                     {% set class = (i%2 != 0) ? "small-text" : "" %}
-                    <ul class="{{class}}">
-                        {% for childItem in menuItems[i].children%}
-                            {% set externalClass = (childItem.isExternal) ? 'external-link' : '' %}
-                            {% set name = ((childItem.label is empty) ? ((childItem.pageTitle is empty)? childItem.blogTitle : childItem.pageTitle) : childItem.label) %}
-                            <li><a href="{{childItem.link |raw}}" {% if childItem.target != "" %}target="{{childItem.target}}"{% endif %}>{{ name }}</a></li>
-                            {% endfor %}
-                    </ul>
+                    {% for childItem in menuItems[i].children if iteration < 4%}
+                        {% set iteration = iteration+1 %}
+                        {% set externalClass = (childItem.isExternal) ? 'external-link' : '' %}
+                        {% set name = ((childItem.label is empty) ? ((childItem.pageTitle is empty)? childItem.blogTitle : childItem.pageTitle) : childItem.label) %}
+                        <li>
+                            <a href="{{childItem.link |raw}}" {% if childItem.target != "" %}target="{{childItem.target}}"{% endif %}>{{ name }}</a>
+                        </li>
+                    {% endfor %}
                 {% endif %}
             {% endif %}
         {% endfor %}
-    </div>
+    </ul>
 </amp-sidebar>

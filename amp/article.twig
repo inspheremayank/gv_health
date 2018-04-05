@@ -43,7 +43,6 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="article__userInfo-content text-center">
-                                            <div class="article__userInfo-date">Published {{article.publishedDate}}</div>
                                             <h1 class="article__userInfo-title">{{article.title}}</h1>
                                         </div>
                                     </div>
@@ -55,37 +54,6 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-12 col-md-10 m-auto">
-                                                <div class="article__main-authorSlide">
-                                                    <div class="author-carousel regular slider">
-                                                        <amp-carousel width="300" height="100" layout="responsive" type="slides" autoplay="" loop="">
-                                                        <div class="article__main-authorSlide-content">
-                                                            <figure class="image-covered rounded-circle">
-                                                                <amp-img src="{{_Media.getMediaUrl(article.createdBy['media'], 100, 100, {crop:'thumb', radius: 'max', gravity:'face',type:'user'})}}" class="" width="100" height="100" layout="responsive"></amp-img>
-                                                            </figure>
-                                                                {% set userName = article.createdBy['displayName'] | replace({' ': '<br />'})|title %}
-                                                            <div class="title">{{userName | raw}}</div>
-                                                            {% set userMeta = _MetaInfo.getMetaData('user', article.createdBy['guid'])%}
-                                                            <div class="designation">{{userMeta.short_position}}</div>
-                                                        </div>
-                                                        {% if article.createdBy['coauthors'] | length > 0%}
-                                                            {% for author in article.createdBy['coauthors'] %}
-                                                                <div class="article__main-authorSlide-content">
-                                                                    <figure class="image-covered rounded-circle">
-                                                                        <amp-img src="{{_Media.getMediaUrl(author['media'], 100, 100, {crop:'thumb', radius: 'max', gravity:'face',type:'user'})}}" class="" width="100" height="100" layout="responsive"></amp-img>
-                                                                    </figure>
-                                                                    <div class="title">{{author['displayName'] | capitalize}}</div>
-                                                                    {% set userMeta = _MetaInfo.getMetaData('user', author['guid'])%}
-                                                                    <div class="designation">{{userMeta.short_position}}</div>
-                                                                </div>
-                                                            {% endfor %}
-                                                        {% endif %}
-                                                        </amp-carousel>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="article__main-wrapper">
                                             <div class="row">
                                                 <div class="col-10 m-auto">
