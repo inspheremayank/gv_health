@@ -90,6 +90,20 @@ HomeController.Listing = (function ($) {
         });
     };
     
+    var addDotClass = function() {
+        $(".small").each(function() {
+            var contentHeading = $(this).find('h2.content__section-heading');
+            var content = $(this).find('div.content__section-description');
+            content.ellipsis({
+                responsive: true,
+                lines: 2
+            });
+            contentHeading.ellipsis({
+                responsive: true,
+                lines: 2
+            });
+        });
+    }
 //    var excerptContentSlide = function() {
 //        $(".excerpt-slideUp").each(function() {
 //            var userHeight = $(this).find('.content__section-userInfo').outerHeight(true);
@@ -192,6 +206,7 @@ HomeController.Listing = (function ($) {
 
     var attachEvents = function () {
         bindSocialPostPopup();
+        addDotClass();
 //        excerptContentSlide();
         if (_appJsConfig.isUserLoggedIn === 1 && _appJsConfig.userHasBlogAccess === 1) {
             //Bind pin/unpin article event
@@ -305,9 +320,9 @@ HomeController.Listing = (function ($) {
                             }
 
 //                            $(".card p, .card h1").dotdotdot();
-
+                            
                             initSwap();
-
+                            
                             //Bind pin/unpin article event
                             bindPinUnpinArticle();
 
@@ -315,7 +330,7 @@ HomeController.Listing = (function ($) {
                             bindDeleteHideArticle();
 
                             videoPlayFancybox();
-
+                            addDotClass();
 //                            excerptContentSlide();
                             bindSocialPostPopup();
                         },
