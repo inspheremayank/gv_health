@@ -103,6 +103,13 @@ HomeController.Listing = (function ($) {
                 lines: 2
             });
         });
+        $(".card__view-half").each(function(){
+            var contentHeading = $(this).find('h2.content__section-heading');
+            contentHeading.ellipsis({
+                responsive: true,
+                lines: 2
+            });
+        });
     }
 //    var excerptContentSlide = function() {
 //        $(".excerpt-slideUp").each(function() {
@@ -441,13 +448,14 @@ HomeController.Listing = (function ($) {
                         }
                         videoPlayFancybox();
                         bindSocialPostPopup();
+                        addDotClass();
                     }
                 },
                 beforeSend: function (jqXHR, settings) {
                     $(btnObj).html('<button class="button button__icon--left button--orange button--radius"><i class="fa fa-spinner fa-spin"></i>Load more</button>');
                 },
                 onComplete: function (jqXHR, textStatus) {
-                    $(btnObj).html('<i class="fa fa-arrow-down" aria-hidden="true"></i> Load More');
+                    $(btnObj).html('<button class="button button__icon--left button--orange button--radius"><i class="fa fa-spin"></i>Load more</button>');
                 }
             });
         });
